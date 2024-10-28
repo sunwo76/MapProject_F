@@ -39,14 +39,14 @@ function App() {
           <div>
             <a href="/">SUNWOO</a>
           </div>
-          <div>
+          {/* <div>
             {
             state == null ?
               <a href={process.env.REACT_APP_BACK_HOST + "/oauth2/login/kakao"}>로그인</a>
               :
               <a href="#" onClick={logoutEvent}>로그아웃</a>
             }
-          </div>
+          </div> */}
       </div>
       <BrowserRouter>
         <Routes>

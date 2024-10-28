@@ -16,7 +16,7 @@ const Home = () => {
         if(query != null) {
             const params = {query: query, page}
             console.log(params);
-            axios.get(process.env.REACT_APP_BACK_HOST + "/search", { params })
+            axios.get(process.env.REACT_APP_BACK_HOST + '/search', { params })
                 .then(res => {
                     console.log(res);
                     setList(res.data.list);
@@ -55,7 +55,7 @@ const Home = () => {
             <div className="search-box">
                 <h1>의류수거함 조회</h1>
                 <form onSubmit={submitEvent}>
-                    <input type="text" className="search-bar" placeholder="구를 입력하세요 (예: 종로구, 서대문구)" name="query" />
+                    <input type="text" className="search-bar" placeholder="구를 입력하세요 (예: 영등포구, 서대문구)" name="query" />
                     <button type="submit" className="search-button">🔍</button>
                 </form>
             </div>
